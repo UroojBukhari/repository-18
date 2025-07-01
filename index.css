@@ -1,0 +1,43 @@
+/* Center on screen */
+body {
+  margin: 0;
+  height: 100vh;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Outer progress bar container */
+.progress-bar {
+  width: 300px;
+  height: 30px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+/* The actual fill bar */
+.progress-fill {
+  height: 100%;
+  background-color: #4caf50;
+  transition: width 0.3s ease;
+}
+
+/* Progress stages */
+.stage-1 .progress-fill {
+  width: 25%;
+}
+
+.stage-2 .progress-fill {
+  width: 50%;
+}
+
+.stage-3 .progress-fill {
+  width: 75%;
+}
+
+.stage-4 .progress-fill {
+  width: 100%;
+}
